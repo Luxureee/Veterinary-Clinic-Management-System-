@@ -53,7 +53,7 @@ Each system module has been strictly modularized and implemented by its respecti
   * Includes programmatic exceptions to cleanly handle boundary anomalies (e.g., attempting to serve an empty consultation room).
   * Hooks into the undo stack tracking system to log transactions before finalizing pointer alterations.
 
-### 👤 Adam — Undo Last Registration
+### 👤 Adalim — Undo Last Registration
 * **Module:** `RegistrationUndoStack`
 * **Logic:** * Employs a custom stack array architecture to pop the most recent structural state.
   * Allows operators to roll back mistaken registrations or service commands, seamlessly extracting the reference nodes out of the queue and restoring past arrangements.
