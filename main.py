@@ -97,18 +97,3 @@ class PriorityConsultationQueue:
         undo_stack.push({"action": "SERVE", "pet": served_pet})
 
         return served_pet
-
-
-class RegistrationUndoStack:
-    """Stack structure tracking actions to handle the undo last registration/service requirements."""
-
-    def __init__(self):
-        self.stack = []  # Python list acting as a dynamic stack
-
-    def push(self, action_data):
-        self.stack.append(action_data)
-
-    def pop(self):
-        if not self.stack:
-            return None
-        return self.stack.pop()
